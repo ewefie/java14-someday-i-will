@@ -13,7 +13,7 @@ public record GBook(@JsonProperty("title")String title,
                     @JsonProperty("description")String description,
                     @JsonProperty("pageCount")Integer pageCount,
                     @JsonProperty("categories")String[]categories,
-                    @JsonProperty("cannonicalVolumeLink")String canonicalVolumeLink,
+                    @JsonProperty("canonicalVolumeLink")String canonicalVolumeLink,
                     @JsonProperty("language")String language,
                     @JsonProperty("previewLink")String previewLink,
                     @JsonProperty("imageLinks")Map<String, String>imageLinks) {
