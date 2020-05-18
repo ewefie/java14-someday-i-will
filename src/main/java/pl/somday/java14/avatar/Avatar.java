@@ -43,4 +43,8 @@ public class Avatar {
     public String getFileType() {
         return fileType;
     }
+
+    public void setUser(final AppUser user) {
+        this.user = user;
+    }
 }
