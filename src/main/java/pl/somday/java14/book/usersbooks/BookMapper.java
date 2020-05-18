@@ -12,7 +12,7 @@ public class BookMapper {
 
     private static final int DESCRIPTION_MAX_LENGTH = 997;
 
-    private static String imageLinksMapToString(final Map<String, String> imageLinks) {
+    static String imageLinksMapToString(final Map<String, String> imageLinks) {
         return imageLinks.get("smallThumbnail");
     }
 
@@ -48,7 +48,7 @@ public class BookMapper {
                 .categories()));
     }
 
-    private static String stringArrayToString(final String[] array) {
+    static String stringArrayToString(final String[] array) {
         return isNull(array) ? "" : String.join(", ", array);
     }
 

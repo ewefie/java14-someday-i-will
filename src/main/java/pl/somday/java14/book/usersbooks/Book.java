@@ -39,6 +39,14 @@ public class Book {
     @Column(name = "image_link")
     private String imageLink;
 
+    protected Book(){
+    }
+
+    protected Book(final Long id, final AppUser user, final String description, final String categories,
+                final String title, final String subtitle, final String authors,
+                final Integer pageCount, final String buyLink, final String imageLink) {
+    }
+
     public Long getId() {
         return id;
     }
@@ -118,4 +126,83 @@ public class Book {
     public void setImageLink(final String imageLink) {
         this.imageLink = imageLink;
     }
+
+    public static BookBuilder builder() {
+        return new BookBuilder();
+    }
+
+    public static class BookBuilder {
+        private Long id;
+        private AppUser user;
+        private String description;
+        private String categories;
+        private String title;
+        private String subtitle;
+        private String authors;
+        private Integer pageCount;
+        private String buyLink;
+        private String imageLink;
+
+        BookBuilder() {
+        }
+
+        public BookBuilder id(Long id) {
+            this.id = id;
+            return this;
+        }
+
+        public BookBuilder user(AppUser user) {
+            this.user = user;
+            return this;
+        }
+
+        public BookBuilder description(String description) {
+            this.description = description;
+            return this;
+        }
+
+        public BookBuilder categories(String categories) {
+            this.categories = categories;
+            return this;
+        }
+
+        public BookBuilder title(String title) {
+            this.title = title;
+            return this;
+        }
+
+        public BookBuilder subtitle(String subtitle) {
+            this.subtitle = subtitle;
+            return this;
+        }
+
+        public BookBuilder authors(String authors) {
+            this.authors = authors;
+            return this;
+        }
+
+        public BookBuilder pageCount(Integer pageCount) {
+            this.pageCount = pageCount;
+            return this;
+        }
+
+        public BookBuilder buyLink(String buyLink) {
+            this.buyLink = buyLink;
+            return this;
+        }
+
+        public BookBuilder imageLink(String imageLink) {
+            this.imageLink = imageLink;
+            return this;
+        }
+
+        public Book build() {
+            return new Book(id, user, description, categories, title, subtitle, authors, pageCount, buyLink, imageLink);
+        }
+
+        public String toString() {
+            return "Book.BookBuilder(id=" + this.id + ", user=" + this.user + ", description=" + this.description + ", categories=" + this.categories + ", title=" + this.title + ", subtitle=" + this.subtitle + ", authors=" + this.authors + ", pageCount=" + this.pageCount + ", buyLink=" + this.buyLink + ", imageLink=" + this.imageLink + ")";
+        }
+    }
+
 }
