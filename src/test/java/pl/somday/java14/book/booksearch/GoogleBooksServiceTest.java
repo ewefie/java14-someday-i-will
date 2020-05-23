@@ -23,7 +23,7 @@ class GoogleBooksServiceTest {
     private RestTemplate restTemplate;
 
     @InjectMocks
-    private GoogleBooksService booksService;
+    private BookService booksService;
 
     @Test
     void shouldReturnBooksWhenAuthorGiven() {

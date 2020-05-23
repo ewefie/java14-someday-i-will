@@ -153,6 +153,8 @@
                             --enable-preview
                         </compilerArg>
                     </compilerArgs>
+                    <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                    <parameters>true</parameters>
                 </configuration>
             </plugin>
         </plugins>
