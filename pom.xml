@@ -155,6 +155,8 @@
                     </compilerArgs>
                     <forceJavacCompilerUse>true</forceJavacCompilerUse>
                     <parameters>true</parameters>
+                    <source>14</source>
+                    <target>14</target>
                 </configuration>
             </plugin>
             <plugin>
