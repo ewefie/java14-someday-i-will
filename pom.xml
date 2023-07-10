@@ -20,7 +20,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-        <h2database.version>2.1.210</h2database.version>
+        <h2database.version>2.2.220</h2database.version>
         <slf4j.version>1.7.30</slf4j.version>
         <jackson.version>2.11.0</jackson.version>
         <jackson.datatype.version>2.10.2</jackson.datatype.version>
