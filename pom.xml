@@ -24,7 +24,7 @@
         <slf4j.version>1.7.30</slf4j.version>
         <jackson.version>2.11.0</jackson.version>
         <jackson.datatype.version>2.10.2</jackson.datatype.version>
-        <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+        <thymeleaf.version>3.0.13.RELEASE</thymeleaf.version>
         <jsonwebtoken.version>0.9.1</jsonwebtoken.version>
         <sendgrid.version>4.4.5</sendgrid.version>
         <javafaker.version>1.0.2</javafaker.version>
